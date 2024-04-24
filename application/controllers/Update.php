@@ -918,9 +918,9 @@ class Update extends CI_Controller
         $data['link_web'] = base_url();
         $data['email'] = $email;
 
-        $body = $this->load->view('email/daftar_ppdb', $data, TRUE);
+        $body = $this->load->view('email/ppdb', $data, TRUE);
 
-        $mail->Subject = $subjek . ' - ' . $web['nama'];
+        $mail->Subject = 'Selamat Anda di Konfirmasi - ' . $web['nama'];
         $mail->Body = $body;
  
         if (!$mail->send()) {

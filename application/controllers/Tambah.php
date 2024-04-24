@@ -131,7 +131,6 @@ class Tambah extends CI_Controller
             redirect('karyawan/view_kelas/' . $id . '');
         }
     }
-
     public function kelas_pengajar()
     {
         $id_peng = $this->input->post('id_peng');
